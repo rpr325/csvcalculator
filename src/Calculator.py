@@ -25,11 +25,11 @@ class Calculator:
         pass
 
     def add(self, a, b):
-        self.result = int(a)+int(b)
+        self.result = addition(a, b)
         return self.result
 
     def multiply(self, a, b):
-        self.result = int(a)*int(b)
+        self.result = multiplication(a, b)
         return self.result
 
     def subtract(self, a, b):
