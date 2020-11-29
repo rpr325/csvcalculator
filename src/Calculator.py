@@ -29,7 +29,7 @@ class Calculator:
         return self.result
 
     def multiply(self, a, b):
-        self.result = multiplication(a, b)
+        self.result = int(a)*int(b)
         return self.result
 
     def subtract(self, a, b):
