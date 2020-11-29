@@ -15,7 +15,7 @@ class MyTestCase(unittest.TestCase):
         #test_data = CsvReader('./src/addition.csv').data
         #for row in test_data:
             #self.assertEqual(self.calculator.add(row['Value 1'], row['Value 2']), int(row['Result']))
-           # self.assertEqual(self.calculator.result, int(row['Result']))
+            #self.assertEqual(self.calculator.result, int(row['Result']))
             #pprint(row)
 
     #def test_subtraction(self):
@@ -33,13 +33,18 @@ class MyTestCase(unittest.TestCase):
             #pprint(self.calculator.result)
 
     def test_division(self):
-        test_data = CsvReader('/src/division.csv').data
+        test_data = CsvReader('./src/division.csv').data
         for row in test_data:
-            self.assertEqual(self.calculator.divide(row['Value 1'], row['Value 2']), int(row['Result']))
-            self.assertEqual(self.calculator.result, int(row['Result']))
-            pprint(self.calculator.result)
+            self.assertEqual(self.calculator.divide(row['Value 2'], row['Value 1']), float(row['Result']))
+            self.assertEqual(self.calculator.result, float(row['Result']))
 
-def test_results_property(self):
+    def test_square(self):
+        test_data = CsvReader('./src/square.csv').data
+        for row in test_data:
+            self.assertEqual(self.calculator.square(row['Value 2'], row['Value 1']), float(row['Result']))
+            self.assertEqual(self.calculator.result, float(row['Result']))
+
+    def test_results_property(self):
         self.assertEqual(self.calculator.result, 0)
 
 if __name__ == '__main__':
