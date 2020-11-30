@@ -19,10 +19,7 @@ def multiplication(a, b):
     return c
 
 def division(a, b):
-    a = int(a)
-    b = int(b)
-    c = a/b
-    return c
+    return round((float(a) / float(b)), 9)
 
 def square(a):
     return float(a)**2
@@ -50,7 +47,7 @@ class Calculator:
         return self.result
 
     def divide(self, a, b):
-        self.result = int(a)/int(b)
+        self.result = division(a, b)
         return self.result
 
     def square(self, a):
