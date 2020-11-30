@@ -55,3 +55,7 @@ class Calculator:
     def square(self, a):
         self.result = square(a)
         return self.result
+
+    def squareroot(self, a):
+        self.result = squarerooting(a)
+        return self.result
