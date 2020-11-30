@@ -28,6 +28,7 @@ def square(a):
     return float(a)**2
 
 def squarerooting(a):
+    a = float (a)
     return round((float(a)**.5), 8)
 
 class Calculator:
