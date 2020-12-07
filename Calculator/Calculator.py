@@ -1,32 +1,4 @@
-from CsvReader import CsvReader
 
-
-def addition(a, b):
-    c = a+b
-    return c
-
-
-def subtraction(a, b):
-    a = int(a)
-    b = int(b)
-    c = a-b
-    return c
-
-def multiplication(a, b):
-    a = int(a)
-    b = int(b)
-    c = a*b
-    return c
-
-def division(a, b):
-    return round((float(a) / float(b)), 9)
-
-def square(a):
-    return float(a)**2
-
-def squarerooting(a):
-    a = float (a)
-    return round((float(a)**.5), 8)
 
 class Calculator:
     result = 0
